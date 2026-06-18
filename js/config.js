@@ -118,33 +118,22 @@ const CONFIG = {
     { number: '24/7', label: 'Soporte' },
   ],
 
-  // ── TIPO DE CAMBIO (CRC por dólar) ──────────────────────
-  // Solo se usa cuando el usuario está en Costa Rica.
-  // Regla: el precio en dólares se redondea al entero más cercano,
-  // luego se multiplica por este valor.
-  // Ejemplo: $5.99 → $6 → ₡3,000
-  exchangeRate: 500,
-
-  // ── PRECIOS BASE EN USD (extranjeros / Centroamérica) ───
+  // ── PRECIOS ──────────────────────────────────────────────
   // Reglas de descuento:
   //   Semestral → "pague 5, lleve 6" = total de 5 mensualidades por 6 meses
   //   Anual     → "pague 10, lleve 12" = total de 10 mensualidades por 12 meses
   pricing: {
-    // Precios mensuales base (USD)
-    usd: {
-      basic:    5.99,
-      standard: 8.99,
-      family:   11.99,
-    },
-    // Precios mensuales base (CRC — para nacionales de Costa Rica)
-    // Regla: redondear precio USD al entero más cercano × 500
-    // basic:    round(5.99)=6  → 6×500 = ₡3,000
-    // standard: round(8.99)=9  → 9×500 = ₡4,500
-    // family:   round(11.99)=12→12×500 = ₡6,000
+    // Precios mensuales en Colones Costarricenses (Costa Rica)
     crc: {
       basic:    3000,
       standard: 4500,
       family:   6000,
+    },
+    // Precios mensuales en USD (LATAM - resto de países)
+    usd: {
+      basic:    6.67,   // 3000 / 450 (tipo de cambio aproximado)
+      standard: 10.00,  // 4500 / 450
+      family:   13.33,  // 6000 / 450
     },
   },
 

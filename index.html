@@ -395,6 +395,27 @@
       </div>
     </div>
   </div>
+
+  <!-- Botón para ver catálogo completo -->
+  <div class="catalog-cta reveal">
+    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDRUkiWXwlGMqyFLPbX1eEcZxFd828Ie9bW-GHhKZeS-QuSdvkadf7ryTspc-nuQ/pubhtml" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="catalog-btn">
+      <svg class="catalog-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span class="catalog-btn-text">
+        <span class="catalog-btn-main">Ver catálogo completo</span>
+        <span class="catalog-btn-sub">800+ títulos disponibles</span>
+      </span>
+      <svg class="catalog-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </a>
+  </div>
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
@@ -405,9 +426,14 @@
   <h2 class="section-title" id="pricing-heading">Elegí el plan<br><em>que se adapta a vos.</em></h2>
   <p class="section-subtitle">Sin pagos extra ni contratos. Al mejor precio del mercado.</p>
 
-  <!-- Badge de divisa detectada por IP (oculto hasta que JS lo active) -->
-  <div class="currency-detect-wrap">
-    <span class="currency-badge" id="currency-badge" style="display:none;" aria-live="polite"></span>
+  <!-- Toggle de región: Costa Rica / LATAM -->
+  <div class="region-toggle-wrap">
+    <button class="region-toggle active" data-region="cr" aria-pressed="true">
+      🇨🇷 Costa Rica
+    </button>
+    <button class="region-toggle" data-region="latam" aria-pressed="false">
+      🌎 LATAM
+    </button>
   </div>
 
   <!-- Tabs de facturación: Mensual / Semestral / Anual -->
@@ -823,6 +849,26 @@
             <br>Contactanos por WhatsApp y solicitá información sobre el programa de resellers. Te explicamos cómo funciona, los márgenes exactos y cómo activar tu cuenta.
             <br><br>
             Es una excelente oportunidad para generar ingresos extras ayudando a otros a disfrutar de contenido premium.
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Velocidad de internet necesaria (NUEVO) -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          ¿Qué velocidad de internet necesito para ver en Full HD?
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Para disfrutar del contenido en Full HD 1080p sin interrupciones, recomendamos tener <strong>al menos 30 MB/s</strong> de velocidad de internet.
+            <br><br>
+            <strong>Importante:</strong>
+            <br>• Conectate preferiblemente por <strong>WiFi</strong> para una mejor experiencia
+            <br>• Si usás datos móviles, tené en cuenta que el contenido en Full HD consume bastante, así que te sugerimos tener un buen plan de datos o conectarte a WiFi cuando sea posible
+            <br>• Todo nuestro contenido se reproduce en Full HD 1080p — no hacemos compresión ni calidad adaptativa, por eso la imagen siempre se ve perfecta
+            <br><br>
+            Si tu conexión es más lenta, podés experimentar pausas o buffering. En ese caso, te recomendamos mejorar tu plan de internet o conectarte más cerca del router WiFi.
           </div>
         </div>
       </div>
