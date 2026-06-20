@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const MODE_LABELS = {
     monthly:    'Mensual',
     semiannual: 'Semestral (pague 5, lleve 6)',
-    annual:     'Anual (pague 10, lleve 12)',
+    annual:     'Anual (pague 9, lleve 12)',
   };
 
   function getModeLabel() {
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const regionLabel = storedRegion === 'cr' ? 'Costa Rica' : 'LATAM';
       const modeLabel = storedMode === 'monthly' ? 'Mensual' : 
                        storedMode === 'semiannual' ? 'Semestral (pague 5, lleve 6)' : 
-                       'Anual (pague 10, lleve 12)';
+                       'Anual (pague 9, lleve 12)';
       
       msg =
         'Hola! Quiero suscribirme a Tauro TV.\n\n' +

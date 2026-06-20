@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (mode === 'annual') {
-      // Pague 10 meses, lleve 12
-      var total12    = base * 10;
+      // Pague 9 meses, lleve 12
+      var total12    = base * 9;
       var perMonth12 = total12 / 12;
       return {
         display: fmt(perMonth12, isCRC),
         period:  '/mes',
         altHTML: '<span class="price-total">Total: ' + fmt(total12, isCRC) + '</span>'
-               + ' &nbsp;·&nbsp; <span class="alt-saving">Paga 10 meses y recibe 12</span>',
+               + ' &nbsp;·&nbsp; <span class="alt-saving">Paga 9 meses y recibe 12</span>',
       };
     }
 

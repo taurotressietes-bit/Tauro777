@@ -121,7 +121,7 @@ const CONFIG = {
   // ── PRECIOS ──────────────────────────────────────────────
   // Reglas de descuento:
   //   Semestral → "pague 5, lleve 6" = total de 5 mensualidades por 6 meses
-  //   Anual     → "pague 10, lleve 12" = total de 10 mensualidades por 12 meses
+  //   Anual     → "pague 9, lleve 12" = total de 9 mensualidades por 12 meses
   pricing: {
     // Precios mensuales en Colones Costarricenses (Costa Rica)
     crc: {
